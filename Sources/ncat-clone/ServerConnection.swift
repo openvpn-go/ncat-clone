@@ -5,7 +5,6 @@ import Network
 class ServerConnection {
 
 	// MARK: - Properties
-
 	private static var nextId: Int = 0
 	// the TCP max package size is 64K 65536
 	let MTU = 65536
@@ -16,7 +15,6 @@ class ServerConnection {
 	var didStopCallback: ((Error?) -> Void?)?
 
 	// MARK: - Lifecycle
-
 	init(nwConnection: NWConnection) {
 		connection = nwConnection
 		id = ServerConnection.nextId
